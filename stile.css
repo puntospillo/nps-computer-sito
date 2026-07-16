@@ -390,6 +390,30 @@ footer li { list-style: none; margin-bottom: 6px; }
 .campo-doppio { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .modale .btn { width: 100%; }
 .modale .nota { font-size: 13.5px; color: var(--grigio); margin-top: 12px; text-align: center; }
+.esito-ok { text-align: center; padding: 22px 0 10px; }
+.esito-icona {
+  width: 62px; height: 62px;
+  border-radius: 50%;
+  background: #2E9E5B;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 16px;
+}
+.esito-ok h4 { font-family: 'Sora', sans-serif; color: var(--blu); font-size: 21px; margin-bottom: 8px; }
+.esito-ok p { color: var(--grigio); }
+.esito-errore {
+  margin-top: 14px;
+  background: #FDECE4;
+  border: 1.5px solid var(--corallo);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--antracite);
+}
+.esito-errore a { color: var(--blu); font-weight: 700; }
 
 /* ── Responsive ── */
 @media (max-width: 1020px) {
