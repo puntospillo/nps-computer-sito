@@ -1,7 +1,7 @@
 /* Moduli di contatto NPS Computer
    Invio diretto tramite FormSubmit (https://formsubmit.co): il visitatore
    preme "Invia" e la richiesta parte subito, senza aprire programmi di posta.
-   Tutte le richieste arrivano a info@npscomputer.it.
+   Tutte le richieste arrivano a maurizio.pagani@npscomputersrl.onmicrosoft.com.
    NOTA una tantum: al primissimo invio FormSubmit manda una email di
    attivazione all'indirizzo di destinazione — va cliccato "Activate"
    una sola volta. */
@@ -91,6 +91,36 @@
   document.addEventListener('DOMContentLoaded', function () {
     document.body.insertAdjacentHTML('beforeend', html);
 
+    /* Menu mobile (hamburger) */
+    var hamburger = document.querySelector('.btn-hamburger');
+    var menuMobile = document.querySelector('.menu-mobile');
+    if (hamburger && menuMobile) {
+      hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('aperto');
+        menuMobile.classList.toggle('aperto');
+      });
+      menuMobile.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          hamburger.classList.remove('aperto');
+          menuMobile.classList.remove('aperto');
+        });
+      });
+    }
+
+    /* Blocca lo scorrimento della pagina mentre un modulo è aperto (evita
+       il doppio scorrimento tipico di iOS Safari) */
+    var scrollY = 0;
+    function bloccaScorrimento() {
+      scrollY = window.scrollY;
+      document.body.style.top = -scrollY + 'px';
+      document.body.classList.add('bloccato');
+    }
+    function sbloccaScorrimento() {
+      document.body.classList.remove('bloccato');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollY);
+    }
+
     function apri(id) {
       var m = document.getElementById(id);
       if (!m) { return; }
@@ -104,11 +134,13 @@
       bottone.disabled = false;
       bottone.textContent = 'Invia la richiesta';
       m.classList.add('aperto');
+      bloccaScorrimento();
     }
     function chiudiTutti() {
       document.querySelectorAll('.modale-sfondo.aperto').forEach(function (m) {
         m.classList.remove('aperto');
       });
+      sbloccaScorrimento();
     }
 
     document.querySelectorAll('[data-modulo]').forEach(function (b) {
@@ -168,14 +200,14 @@
             '<p class="esito-errore">Non è stato possibile inviare la richiesta. ' +
             'Riprovate tra qualche istante, oppure chiamateci allo ' +
             '<a href="tel:+390283241663">02 83.241.663</a> o scrivete a ' +
-            '<a href="mailto:' + destinatario + '">' + destinatario + '</a>.</p>';
+            '<a href="mailto:info@npscomputer.it">info@npscomputer.it</a>.</p>';
         });
     }
 
     var fa = document.getElementById('form-assistenza');
     fa.addEventListener('submit', function (e) {
       e.preventDefault();
-      invia(fa, 'info@npscomputer.it',
+      invia(fa, 'maurizio.pagani@npscomputersrl.onmicrosoft.com',
         'Richiesta di assistenza — ' + fa.nome.value,
         {
           'Nome cliente': fa.nome.value,
@@ -189,7 +221,7 @@
     var fc = document.getElementById('form-consulenza');
     fc.addEventListener('submit', function (e) {
       e.preventDefault();
-      invia(fc, 'info@npscomputer.it',
+      invia(fc, 'maurizio.pagani@npscomputersrl.onmicrosoft.com',
         'Richiesta di consulenza — ' + fc.nome.value,
         {
           'Nome o ragione sociale': fc.nome.value,

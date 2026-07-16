@@ -70,6 +70,49 @@ nav.menu a {
   transition: color .15s, border-color .15s;
 }
 nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--corallo); }
+
+/* ── Menu mobile ── */
+.btn-hamburger {
+  display: none;
+  flex: none;
+  width: 42px; height: 42px;
+  border: none;
+  background: var(--azzurro);
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-direction: column;
+}
+.btn-hamburger span {
+  display: block;
+  width: 20px; height: 2.5px;
+  background: var(--blu);
+  border-radius: 2px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.btn-hamburger.aperto span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.btn-hamburger.aperto span:nth-child(2) { opacity: 0; }
+.btn-hamburger.aperto span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1px solid rgba(23,55,91,.1);
+  padding: 8px 0;
+}
+.menu-mobile.aperto { display: flex; }
+.menu-mobile a {
+  padding: 14px 24px;
+  color: var(--antracite);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16.5px;
+  border-bottom: 1px solid rgba(23,55,91,.06);
+}
+.menu-mobile a.attivo { color: var(--blu); }
+.menu-mobile a:last-child { border-bottom: none; }
 .btn-assistenza {
   background: var(--corallo);
   color: #fff;
@@ -304,6 +347,18 @@ footer li { list-style: none; margin-bottom: 6px; }
 }
 .spunte strong { display: block; color: var(--blu); font-size: 17px; }
 .spunte span { color: var(--grigio); font-size: 15.5px; }
+.spunte .segno.numero { background: var(--blu); font-size: 13px; }
+
+.avviso {
+  background: linear-gradient(135deg, var(--blu) 0%, var(--blu-scuro) 100%);
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px 32px;
+  margin: 30px 0 38px;
+}
+.avviso h3 { color: #F5B199; font-size: 21px; margin-bottom: 12px; }
+.avviso p { color: #DCE9F5; margin-bottom: 14px; }
+.avviso .btn { margin-top: 6px; }
 
 .colonna-lato { position: sticky; top: 100px; }
 .foto-pagina { border-radius: 16px; overflow: hidden; box-shadow: 0 14px 36px rgba(23,55,91,.16); margin-bottom: 24px; position: relative; }
@@ -422,14 +477,19 @@ footer li { list-style: none; margin-bottom: 6px; }
 }
 @media (max-width: 860px) {
   nav.menu { display: none; }
+  .btn-hamburger { display: flex; }
   .rassi-grid, .dettaglio-grid { grid-template-columns: 1fr; }
   .step-grid { grid-template-columns: 1fr; }
   .hero-contenuto { padding: 64px 0; }
   .colonna-lato { position: static; }
   .campo-doppio { grid-template-columns: 1fr; }
 }
+body.bloccato { overflow: hidden; position: fixed; width: 100%; }
 @media (max-width: 560px) {
   .riquadri { grid-template-columns: 1fr; }
-  .logo img { height: 44px; }
-  .modale { padding: 26px 22px 22px; }
+  .logo img { height: 40px; }
+  .modale { padding: 26px 18px 20px; }
+  .nav { gap: 10px; }
+  .btn-assistenza { padding: 9px 12px; font-size: 13.5px; white-space: normal; text-align: left; }
+  .btn-assistenza svg { flex: none; }
 }
