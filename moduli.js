@@ -1,9 +1,10 @@
 /* Moduli di contatto NPS Computer
    Invio diretto tramite FormSubmit (https://formsubmit.co): il visitatore
    preme "Invia" e la richiesta parte subito, senza aprire programmi di posta.
+   Tutte le richieste arrivano a info@npscomputer.it.
    NOTA una tantum: al primissimo invio FormSubmit manda una email di
-   attivazione a ciascun indirizzo di destinazione — va cliccato "Activate"
-   una sola volta per assistenza@npscomputer.it e per info@npscomputer.it. */
+   attivazione all'indirizzo di destinazione — va cliccato "Activate"
+   una sola volta. */
 (function () {
   'use strict';
 
@@ -174,7 +175,7 @@
     var fa = document.getElementById('form-assistenza');
     fa.addEventListener('submit', function (e) {
       e.preventDefault();
-      invia(fa, 'assistenza@npscomputer.it',
+      invia(fa, 'info@npscomputer.it',
         'Richiesta di assistenza — ' + fa.nome.value,
         {
           'Nome cliente': fa.nome.value,
