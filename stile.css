@@ -191,49 +191,72 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
 .gruppo-testa p { color: var(--grigio); font-size: 18.5px; }
 .riquadri {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
 }
-.riquadro {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 24px rgba(23,55,91,.09);
+
+/* Riquadri colorati testuali (stile "hashtag") */
+.tinta {
+  position: relative;
+  border-radius: 18px;
+  padding: 36px 34px 30px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  color: #fff;
   text-decoration: none;
-  color: var(--antracite);
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-.riquadro:hover { transform: translateY(-5px); box-shadow: 0 14px 34px rgba(23,55,91,.16); }
-.riquadro .foto {
-  height: 150px;
-  background: linear-gradient(140deg, var(--blu) 0%, var(--blu-scuro) 100%);
-  position: relative;
   overflow: hidden;
+  min-height: 230px;
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
 }
-.riquadro .foto img { width: 100%; height: 100%; object-fit: cover; }
-.riquadro .corpo { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
-.riquadro h3 { font-size: 18.5px; color: var(--blu); margin-bottom: 8px; }
-.riquadro p { font-size: 15.5px; color: var(--grigio); flex: 1; }
-.riquadro .link {
-  margin-top: 16px;
+.tinta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='52'%3E%3Ctext x='0' y='16' font-family='monospace' font-size='13' font-weight='bold' fill='white'%3E10011011%3C/text%3E%3Ctext x='14' y='38' font-family='monospace' font-size='13' font-weight='bold' fill='white'%3E01101001%3C/text%3E%3C/svg%3E");
+  opacity: .05;
+  pointer-events: none;
+}
+.tinta > * { position: relative; margin: 0; }
+a.tinta:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(15,39,64,.28); filter: brightness(1.05); }
+.c-blu { background: linear-gradient(135deg, #1E4573 0%, var(--blu) 100%); }
+.c-teal { background: linear-gradient(135deg, #1F7A72 0%, #15544E 100%); }
+.c-corallo { background: linear-gradient(135deg, #E06A3F 0%, #C24E2B 100%); }
+.c-ardesia { background: linear-gradient(135deg, #4A6E96 0%, #35618E 100%); }
+.tinta .hashtag {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.85);
+}
+.tinta .domanda {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9vw, 25px);
+  line-height: 1.32;
+  flex: 1;
+}
+.tinta .link {
   font-family: 'Sora', sans-serif;
   font-weight: 600;
   font-size: 15px;
-  color: var(--corallo);
+  color: #fff;
   display: inline-flex;
   align-items: center;
   gap: 6px;
 }
-.riquadro:hover .link { text-decoration: underline; }
+a.tinta:hover .link { text-decoration: underline; }
+.tinta-mini { min-height: 185px; padding: 26px 26px 22px; }
+.tinta-mini .domanda { font-size: 18.5px; }
+.tinta-lato { min-height: 280px; margin-bottom: 24px; }
 .gruppo-cta { margin-top: 36px; text-align: center; }
 
 /* ── Rassicurazione ── */
 .rassicurazione { background: var(--blu); color: #fff; padding: 76px 0; }
 .rassi-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; align-items: center; }
-.rassi-foto { border-radius: 16px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.3); position: relative; }
-.rassi-foto img { width: 100%; height: 300px; object-fit: cover; }
+.rassi-pannello { min-height: 300px; box-shadow: 0 16px 40px rgba(0,0,0,.3); }
 .rassicurazione h2 { font-size: clamp(26px, 3vw, 36px); margin-bottom: 16px; }
 .rassicurazione p { font-size: 19px; color: #DCE9F5; margin-bottom: 28px; max-width: 34em; }
 .telefono {
@@ -251,15 +274,6 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   transition: transform .15s;
 }
 .telefono:hover { transform: translateY(-2px); }
-.etichetta-segnaposto {
-  position: absolute;
-  bottom: 10px; right: 10px;
-  background: rgba(15,39,64,.85);
-  color: #fff;
-  font-size: 11px;
-  padding: 4px 10px;
-  border-radius: 20px;
-}
 
 /* ── Come lavoriamo ── */
 .metodo { padding: 84px 0; }
@@ -361,8 +375,6 @@ footer li { list-style: none; margin-bottom: 6px; }
 .avviso .btn { margin-top: 6px; }
 
 .colonna-lato { position: sticky; top: 100px; }
-.foto-pagina { border-radius: 16px; overflow: hidden; box-shadow: 0 14px 36px rgba(23,55,91,.16); margin-bottom: 24px; position: relative; }
-.foto-pagina img { width: 100%; height: 300px; object-fit: cover; }
 .box-cta { background: var(--azzurro); border-radius: 16px; padding: 28px; }
 .box-cta h3 { color: var(--blu); font-size: 20px; margin-bottom: 10px; }
 .box-cta p { font-size: 15.5px; color: var(--grigio); margin-bottom: 18px; }
@@ -373,19 +385,6 @@ footer li { list-style: none; margin-bottom: 6px; }
 .correlati { background: #fff; padding: 60px 0 80px; border-top: 1px solid rgba(23,55,91,.08); }
 .correlati h2 { color: var(--blu); font-size: 26px; margin-bottom: 28px; text-align: center; }
 .correlati-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.correlato {
-  background: var(--bianco-caldo);
-  border: 1.5px solid #E8E2D9;
-  border-radius: 14px;
-  padding: 22px 24px;
-  text-decoration: none;
-  color: var(--antracite);
-  transition: border-color .15s, transform .15s;
-}
-.correlato:hover { border-color: var(--corallo); transform: translateY(-3px); }
-.correlato strong { font-family: 'Sora', sans-serif; color: var(--blu); display: block; margin-bottom: 6px; }
-.correlato span { font-size: 15px; color: var(--grigio); display: block; }
-.correlato .freccia { color: var(--corallo); font-weight: 700; margin-top: 10px; display: inline-block; font-size: 15px; }
 
 /* ── Moduli (finestre) ── */
 .modale-sfondo {
@@ -472,8 +471,11 @@ footer li { list-style: none; margin-bottom: 6px; }
 
 /* ── Responsive ── */
 @media (max-width: 1020px) {
-  .riquadri { grid-template-columns: repeat(2, 1fr); }
   .correlati-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .riquadri { grid-template-columns: 1fr; }
+  .tinta { min-height: 190px; }
 }
 @media (max-width: 860px) {
   nav.menu { display: none; }
