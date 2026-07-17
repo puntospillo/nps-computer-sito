@@ -278,6 +278,7 @@ a.tinta:hover .link { text-decoration: underline; }
   border-top: 4px solid var(--blu);
 }
 .step:nth-child(2) { border-top-color: var(--corallo); }
+.step:nth-child(3) { border-top-color: #1F7A72; }
 .step .numero {
   width: 52px; height: 52px;
   border-radius: 50%;
@@ -291,6 +292,7 @@ a.tinta:hover .link { text-decoration: underline; }
   margin-bottom: 18px;
 }
 .step:nth-child(2) .numero { background: var(--corallo); }
+.step:nth-child(3) .numero { background: #1F7A72; }
 .step h3 { font-size: 21px; color: var(--blu); margin-bottom: 8px; }
 .step p { color: var(--grigio); font-size: 16.5px; }
 
