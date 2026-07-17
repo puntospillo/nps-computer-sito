@@ -131,6 +131,7 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   white-space: nowrap;
 }
 .btn-assistenza:hover { background: var(--corallo-scuro); }
+.btn-assistenza .testo-breve { display: none; }
 
 /* ── Hero con video ── */
 .hero {
@@ -213,8 +214,8 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='176' height='64'%3E%3Ctext x='2' y='24' font-family='Courier New, monospace' font-size='18' font-weight='bold' fill='white'%3E1 0 0 1 1 0 1 1%3C/text%3E%3Ctext x='2' y='54' font-family='Courier New, monospace' font-size='18' font-weight='bold' fill='white'%3E0 1 1 0 1 0 0 1%3C/text%3E%3C/svg%3E");
-  background-size: 176px 64px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='56'%3E%3Ctext font-family='Courier New, monospace' font-size='16' font-weight='bold' fill='white'%3E%3Ctspan x='4' y='20'%3E1%3C/tspan%3E%3Ctspan x='17' y='20'%3E0%3C/tspan%3E%3Ctspan x='30' y='20'%3E0%3C/tspan%3E%3Ctspan x='43' y='20'%3E1%3C/tspan%3E%3Ctspan x='56' y='20'%3E1%3C/tspan%3E%3Ctspan x='69' y='20'%3E0%3C/tspan%3E%3Ctspan x='82' y='20'%3E1%3C/tspan%3E%3Ctspan x='95' y='20'%3E1%3C/tspan%3E%3Ctspan x='4' y='44'%3E0%3C/tspan%3E%3Ctspan x='17' y='44'%3E1%3C/tspan%3E%3Ctspan x='30' y='44'%3E1%3C/tspan%3E%3Ctspan x='43' y='44'%3E0%3C/tspan%3E%3Ctspan x='56' y='44'%3E1%3C/tspan%3E%3Ctspan x='69' y='44'%3E0%3C/tspan%3E%3Ctspan x='82' y='44'%3E0%3C/tspan%3E%3Ctspan x='95' y='44'%3E1%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 112px 56px;
   opacity: .08;
   pointer-events: none;
 }
@@ -332,11 +333,28 @@ footer li { list-style: none; margin-bottom: 6px; }
 
 /* ── Pagine di dettaglio servizio ── */
 .hero-pagina {
+  position: relative;
   background: linear-gradient(140deg, var(--blu) 0%, var(--blu-scuro) 100%);
   color: #fff;
   padding: 60px 0 64px;
+  overflow: hidden;
 }
+.hero-pagina::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='56'%3E%3Ctext font-family='Courier New, monospace' font-size='16' font-weight='bold' fill='white'%3E%3Ctspan x='4' y='20'%3E1%3C/tspan%3E%3Ctspan x='17' y='20'%3E0%3C/tspan%3E%3Ctspan x='30' y='20'%3E0%3C/tspan%3E%3Ctspan x='43' y='20'%3E1%3C/tspan%3E%3Ctspan x='56' y='20'%3E1%3C/tspan%3E%3Ctspan x='69' y='20'%3E0%3C/tspan%3E%3Ctspan x='82' y='20'%3E1%3C/tspan%3E%3Ctspan x='95' y='20'%3E1%3C/tspan%3E%3Ctspan x='4' y='44'%3E0%3C/tspan%3E%3Ctspan x='17' y='44'%3E1%3C/tspan%3E%3Ctspan x='30' y='44'%3E1%3C/tspan%3E%3Ctspan x='43' y='44'%3E0%3C/tspan%3E%3Ctspan x='56' y='44'%3E1%3C/tspan%3E%3Ctspan x='69' y='44'%3E0%3C/tspan%3E%3Ctspan x='82' y='44'%3E0%3C/tspan%3E%3Ctspan x='95' y='44'%3E1%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 112px 56px;
+  opacity: .08;
+  pointer-events: none;
+}
+.hero-pagina .container { position: relative; }
+.tema-blu .hero-pagina { background: linear-gradient(135deg, #1E4573 0%, var(--blu) 100%); }
+.tema-teal .hero-pagina { background: linear-gradient(135deg, #1F7A72 0%, #15544E 100%); }
+.tema-corallo .hero-pagina { background: linear-gradient(135deg, #E06A3F 0%, #C24E2B 100%); }
+.tema-ardesia .hero-pagina { background: linear-gradient(135deg, #4A6E96 0%, #35618E 100%); }
 .hero-pagina .occhiello { color: #F5B199; margin-bottom: 10px; }
+.tema-corallo .hero-pagina .occhiello { color: #FFF3ED; }
 .hero-pagina h1 { font-size: clamp(30px, 3.6vw, 44px); max-width: 22em; }
 .hero-pagina .sotto { color: #DCE9F5; font-size: 19.5px; margin-top: 14px; max-width: 42em; }
 .briciole { font-size: 14.5px; margin-bottom: 22px; color: #9FB3C8; }
@@ -493,9 +511,10 @@ footer li { list-style: none; margin-bottom: 6px; }
 body.bloccato { overflow: hidden; position: fixed; width: 100%; }
 @media (max-width: 560px) {
   .riquadri { grid-template-columns: 1fr; }
-  .logo img { height: 40px; }
   .modale { padding: 26px 18px 20px; }
-  .nav { gap: 10px; }
-  .btn-assistenza { padding: 9px 12px; font-size: 13.5px; white-space: normal; text-align: left; }
+  .nav { gap: 8px; }
+  .btn-assistenza { padding: 9px 13px; font-size: 13.5px; }
   .btn-assistenza svg { flex: none; }
+  .btn-assistenza .testo-lungo { display: none; }
+  .btn-assistenza .testo-breve { display: inline; }
 }

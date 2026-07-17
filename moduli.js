@@ -13,7 +13,7 @@
     '  <div class="modale" role="dialog" aria-modal="true" aria-labelledby="titolo-assistenza">' +
     '    <button type="button" class="chiudi" aria-label="Chiudi">&times;</button>' +
     '    <h3 id="titolo-assistenza">Richiesta di assistenza</h3>' +
-    '    <p class="sotto">Compilate il modulo: vi ricontatteremo il prima possibile.</p>' +
+    '    <p class="sotto">Compila il modulo: ti ricontatteremo il prima possibile.</p>' +
     '    <form id="form-assistenza">' +
     '      <div class="campo">' +
     '        <label for="ass-nome">Nome cliente / azienda</label>' +
@@ -27,7 +27,7 @@
     '        </select>' +
     '      </div>' +
     '      <div class="campo">' +
-    '        <label for="ass-descrizione">Descrivete la richiesta di assistenza</label>' +
+    '        <label for="ass-descrizione">Descrivi la richiesta di assistenza</label>' +
     '        <textarea id="ass-descrizione" name="descrizione" required placeholder="Es. il gestionale non si avvia da questa mattina su due postazioni…"></textarea>' +
     '      </div>' +
     '      <div class="campo campo-doppio">' +
@@ -49,8 +49,8 @@
     '<div class="modale-sfondo" id="modale-consulenza">' +
     '  <div class="modale" role="dialog" aria-modal="true" aria-labelledby="titolo-consulenza">' +
     '    <button type="button" class="chiudi" aria-label="Chiudi">&times;</button>' +
-    '    <h3 id="titolo-consulenza">Contattateci per parlare dei nostri servizi</h3>' +
-    '    <p class="sotto">Raccontateci le vostre esigenze: il primo confronto è senza impegno.</p>' +
+    '    <h3 id="titolo-consulenza">Contattaci per parlare dei nostri servizi</h3>' +
+    '    <p class="sotto">Raccontaci le tue esigenze: il primo confronto è senza impegno.</p>' +
     '    <form id="form-consulenza">' +
     '      <div class="campo">' +
     '        <label for="con-nome">Nome o ragione sociale</label>' +
@@ -188,7 +188,7 @@
             '<div class="esito-ok">' +
             '  <div class="esito-icona">✓</div>' +
             '  <h4>Richiesta inviata</h4>' +
-            '  <p>Grazie! Vi ricontatteremo il prima possibile.</p>' +
+            '  <p>Grazie! Ti ricontatteremo il prima possibile.</p>' +
             '</div>';
           form.reset();
         })
@@ -198,8 +198,8 @@
           esito.hidden = false;
           esito.innerHTML =
             '<p class="esito-errore">Non è stato possibile inviare la richiesta. ' +
-            'Riprovate tra qualche istante, oppure chiamateci allo ' +
-            '<a href="tel:+390283241663">02 83.241.663</a> o scrivete a ' +
+            'Riprova tra qualche istante, oppure chiamaci allo ' +
+            '<a href="tel:+390283241663">02 83.241.663</a> o scrivi a ' +
             '<a href="mailto:info@npscomputer.it">info@npscomputer.it</a>.</p>';
         });
     }
