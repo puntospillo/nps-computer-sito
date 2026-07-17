@@ -3,7 +3,7 @@
    preme "Invia" e la richiesta parte subito, senza aprire programmi di posta.
    Tutte le richieste arrivano a maurizio.pagani@npscomputersrl.onmicrosoft.com.
    NOTA una tantum: al primissimo invio FormSubmit manda una email di
-   attivazione all'indirizzo di destinazione — va cliccato "Activate"
+   attivazione all'indirizzo di destinazione: va cliccato "Activate"
    una sola volta. */
 (function () {
   'use strict';
@@ -208,7 +208,7 @@
     fa.addEventListener('submit', function (e) {
       e.preventDefault();
       invia(fa, 'maurizio.pagani@npscomputersrl.onmicrosoft.com',
-        'Richiesta di assistenza — ' + fa.nome.value,
+        'Richiesta di assistenza: ' + fa.nome.value,
         {
           'Nome cliente': fa.nome.value,
           'Tipo di assistenza': fa.tipo.value,
@@ -222,7 +222,7 @@
     fc.addEventListener('submit', function (e) {
       e.preventDefault();
       invia(fc, 'maurizio.pagani@npscomputersrl.onmicrosoft.com',
-        'Richiesta di consulenza — ' + fc.nome.value,
+        'Richiesta di consulenza: ' + fc.nome.value,
         {
           'Nome o ragione sociale': fc.nome.value,
           'Telefono': fc.telefono.value || 'non indicato',

@@ -214,8 +214,8 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='56'%3E%3Ctext font-family='Courier New, monospace' font-size='16' font-weight='bold' fill='white'%3E%3Ctspan x='4' y='20'%3E1%3C/tspan%3E%3Ctspan x='17' y='20'%3E0%3C/tspan%3E%3Ctspan x='30' y='20'%3E0%3C/tspan%3E%3Ctspan x='43' y='20'%3E1%3C/tspan%3E%3Ctspan x='56' y='20'%3E1%3C/tspan%3E%3Ctspan x='69' y='20'%3E0%3C/tspan%3E%3Ctspan x='82' y='20'%3E1%3C/tspan%3E%3Ctspan x='95' y='20'%3E1%3C/tspan%3E%3Ctspan x='4' y='44'%3E0%3C/tspan%3E%3Ctspan x='17' y='44'%3E1%3C/tspan%3E%3Ctspan x='30' y='44'%3E1%3C/tspan%3E%3Ctspan x='43' y='44'%3E0%3C/tspan%3E%3Ctspan x='56' y='44'%3E1%3C/tspan%3E%3Ctspan x='69' y='44'%3E0%3C/tspan%3E%3Ctspan x='82' y='44'%3E0%3C/tspan%3E%3Ctspan x='95' y='44'%3E1%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  background-size: 112px 56px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='208' height='76'%3E%3Ctext font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white'%3E%3Ctspan x='1' y='36'%3E1%3C/tspan%3E%3Ctspan x='27' y='36'%3E0%3C/tspan%3E%3Ctspan x='53' y='36'%3E0%3C/tspan%3E%3Ctspan x='79' y='36'%3E1%3C/tspan%3E%3Ctspan x='105' y='36'%3E1%3C/tspan%3E%3Ctspan x='131' y='36'%3E0%3C/tspan%3E%3Ctspan x='157' y='36'%3E1%3C/tspan%3E%3Ctspan x='183' y='36'%3E0%3C/tspan%3E%3Ctspan x='1' y='74'%3E0%3C/tspan%3E%3Ctspan x='27' y='74'%3E1%3C/tspan%3E%3Ctspan x='53' y='74'%3E1%3C/tspan%3E%3Ctspan x='79' y='74'%3E1%3C/tspan%3E%3Ctspan x='105' y='74'%3E0%3C/tspan%3E%3Ctspan x='131' y='74'%3E1%3C/tspan%3E%3Ctspan x='157' y='74'%3E0%3C/tspan%3E%3Ctspan x='183' y='74'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 208px 76px;
   opacity: .08;
   pointer-events: none;
 }
@@ -343,8 +343,8 @@ footer li { list-style: none; margin-bottom: 6px; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='56'%3E%3Ctext font-family='Courier New, monospace' font-size='16' font-weight='bold' fill='white'%3E%3Ctspan x='4' y='20'%3E1%3C/tspan%3E%3Ctspan x='17' y='20'%3E0%3C/tspan%3E%3Ctspan x='30' y='20'%3E0%3C/tspan%3E%3Ctspan x='43' y='20'%3E1%3C/tspan%3E%3Ctspan x='56' y='20'%3E1%3C/tspan%3E%3Ctspan x='69' y='20'%3E0%3C/tspan%3E%3Ctspan x='82' y='20'%3E1%3C/tspan%3E%3Ctspan x='95' y='20'%3E1%3C/tspan%3E%3Ctspan x='4' y='44'%3E0%3C/tspan%3E%3Ctspan x='17' y='44'%3E1%3C/tspan%3E%3Ctspan x='30' y='44'%3E1%3C/tspan%3E%3Ctspan x='43' y='44'%3E0%3C/tspan%3E%3Ctspan x='56' y='44'%3E1%3C/tspan%3E%3Ctspan x='69' y='44'%3E0%3C/tspan%3E%3Ctspan x='82' y='44'%3E0%3C/tspan%3E%3Ctspan x='95' y='44'%3E1%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  background-size: 112px 56px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='208' height='76'%3E%3Ctext font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white'%3E%3Ctspan x='1' y='36'%3E1%3C/tspan%3E%3Ctspan x='27' y='36'%3E0%3C/tspan%3E%3Ctspan x='53' y='36'%3E0%3C/tspan%3E%3Ctspan x='79' y='36'%3E1%3C/tspan%3E%3Ctspan x='105' y='36'%3E1%3C/tspan%3E%3Ctspan x='131' y='36'%3E0%3C/tspan%3E%3Ctspan x='157' y='36'%3E1%3C/tspan%3E%3Ctspan x='183' y='36'%3E0%3C/tspan%3E%3Ctspan x='1' y='74'%3E0%3C/tspan%3E%3Ctspan x='27' y='74'%3E1%3C/tspan%3E%3Ctspan x='53' y='74'%3E1%3C/tspan%3E%3Ctspan x='79' y='74'%3E1%3C/tspan%3E%3Ctspan x='105' y='74'%3E0%3C/tspan%3E%3Ctspan x='131' y='74'%3E1%3C/tspan%3E%3Ctspan x='157' y='74'%3E0%3C/tspan%3E%3Ctspan x='183' y='74'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 208px 76px;
   opacity: .08;
   pointer-events: none;
 }
