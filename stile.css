@@ -213,7 +213,8 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='56'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='17' font-weight='bold' letter-spacing='2' fill='white'%3E10011011010010%3C/text%3E%3Ctext x='-7' y='48' font-family='monospace' font-size='17' font-weight='bold' letter-spacing='2' fill='white'%3E01101001101101%3C/text%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='176' height='64'%3E%3Ctext x='2' y='24' font-family='Courier New, monospace' font-size='18' font-weight='bold' fill='white'%3E1 0 0 1 1 0 1 1%3C/text%3E%3Ctext x='2' y='54' font-family='Courier New, monospace' font-size='18' font-weight='bold' fill='white'%3E0 1 1 0 1 0 0 1%3C/text%3E%3C/svg%3E");
+  background-size: 176px 64px;
   opacity: .08;
   pointer-events: none;
 }
@@ -223,14 +224,6 @@ a.tinta:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(15,39,
 .c-teal { background: linear-gradient(135deg, #1F7A72 0%, #15544E 100%); }
 .c-corallo { background: linear-gradient(135deg, #E06A3F 0%, #C24E2B 100%); }
 .c-ardesia { background: linear-gradient(135deg, #4A6E96 0%, #35618E 100%); }
-.tinta .hashtag {
-  font-family: 'Sora', sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.85);
-}
 .tinta .domanda {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
@@ -256,8 +249,13 @@ a.tinta:hover .link { text-decoration: underline; }
 .tinta-mini { min-height: 185px; padding: 26px 26px 22px; gap: 12px; }
 .tinta-mini .domanda { font-size: 18.5px; }
 .tinta-mini .descr { font-size: 14.5px; }
-.tinta-lato { min-height: 280px; margin-bottom: 24px; }
 .gruppo-cta { margin-top: 36px; text-align: center; }
+
+/* Colore tema per pagina di dettaglio: il colore del suo riquadro */
+.tema-blu .dettaglio-testo h2 { color: #1E4573; }
+.tema-teal .dettaglio-testo h2 { color: #15544E; }
+.tema-corallo .dettaglio-testo h2 { color: #C24E2B; }
+.tema-ardesia .dettaglio-testo h2 { color: #35618E; }
 
 /* ── Rassicurazione ── */
 .rassicurazione { background: var(--blu); color: #fff; padding: 76px 0; }
