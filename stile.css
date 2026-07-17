@@ -214,8 +214,8 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='208' height='76'%3E%3Ctext font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white'%3E%3Ctspan x='1' y='36'%3E1%3C/tspan%3E%3Ctspan x='27' y='36'%3E0%3C/tspan%3E%3Ctspan x='53' y='36'%3E0%3C/tspan%3E%3Ctspan x='79' y='36'%3E1%3C/tspan%3E%3Ctspan x='105' y='36'%3E1%3C/tspan%3E%3Ctspan x='131' y='36'%3E0%3C/tspan%3E%3Ctspan x='157' y='36'%3E1%3C/tspan%3E%3Ctspan x='183' y='36'%3E0%3C/tspan%3E%3Ctspan x='1' y='74'%3E0%3C/tspan%3E%3Ctspan x='27' y='74'%3E1%3C/tspan%3E%3Ctspan x='53' y='74'%3E1%3C/tspan%3E%3Ctspan x='79' y='74'%3E1%3C/tspan%3E%3Ctspan x='105' y='74'%3E0%3C/tspan%3E%3Ctspan x='131' y='74'%3E1%3C/tspan%3E%3Ctspan x='157' y='74'%3E0%3C/tspan%3E%3Ctspan x='183' y='74'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  background-size: 208px 76px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='24'%3E1%3C/tspan%3E%3Ctspan x='20' y='24'%3E0%3C/tspan%3E%3Ctspan x='40' y='24'%3E0%3C/tspan%3E%3Ctspan x='60' y='24'%3E1%3C/tspan%3E%3Ctspan x='80' y='24'%3E1%3C/tspan%3E%3Ctspan x='100' y='24'%3E0%3C/tspan%3E%3Ctspan x='120' y='24'%3E1%3C/tspan%3E%3Ctspan x='140' y='24'%3E0%3C/tspan%3E%3Ctspan x='0' y='51'%3E0%3C/tspan%3E%3Ctspan x='20' y='51'%3E1%3C/tspan%3E%3Ctspan x='40' y='51'%3E1%3C/tspan%3E%3Ctspan x='60' y='51'%3E1%3C/tspan%3E%3Ctspan x='80' y='51'%3E0%3C/tspan%3E%3Ctspan x='100' y='51'%3E1%3C/tspan%3E%3Ctspan x='120' y='51'%3E0%3C/tspan%3E%3Ctspan x='140' y='51'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 160px 54px;
   opacity: .08;
   pointer-events: none;
 }
@@ -343,8 +343,8 @@ footer li { list-style: none; margin-bottom: 6px; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='208' height='76'%3E%3Ctext font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='white'%3E%3Ctspan x='1' y='36'%3E1%3C/tspan%3E%3Ctspan x='27' y='36'%3E0%3C/tspan%3E%3Ctspan x='53' y='36'%3E0%3C/tspan%3E%3Ctspan x='79' y='36'%3E1%3C/tspan%3E%3Ctspan x='105' y='36'%3E1%3C/tspan%3E%3Ctspan x='131' y='36'%3E0%3C/tspan%3E%3Ctspan x='157' y='36'%3E1%3C/tspan%3E%3Ctspan x='183' y='36'%3E0%3C/tspan%3E%3Ctspan x='1' y='74'%3E0%3C/tspan%3E%3Ctspan x='27' y='74'%3E1%3C/tspan%3E%3Ctspan x='53' y='74'%3E1%3C/tspan%3E%3Ctspan x='79' y='74'%3E1%3C/tspan%3E%3Ctspan x='105' y='74'%3E0%3C/tspan%3E%3Ctspan x='131' y='74'%3E1%3C/tspan%3E%3Ctspan x='157' y='74'%3E0%3C/tspan%3E%3Ctspan x='183' y='74'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  background-size: 208px 76px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='24'%3E1%3C/tspan%3E%3Ctspan x='20' y='24'%3E0%3C/tspan%3E%3Ctspan x='40' y='24'%3E0%3C/tspan%3E%3Ctspan x='60' y='24'%3E1%3C/tspan%3E%3Ctspan x='80' y='24'%3E1%3C/tspan%3E%3Ctspan x='100' y='24'%3E0%3C/tspan%3E%3Ctspan x='120' y='24'%3E1%3C/tspan%3E%3Ctspan x='140' y='24'%3E0%3C/tspan%3E%3Ctspan x='0' y='51'%3E0%3C/tspan%3E%3Ctspan x='20' y='51'%3E1%3C/tspan%3E%3Ctspan x='40' y='51'%3E1%3C/tspan%3E%3Ctspan x='60' y='51'%3E1%3C/tspan%3E%3Ctspan x='80' y='51'%3E0%3C/tspan%3E%3Ctspan x='100' y='51'%3E1%3C/tspan%3E%3Ctspan x='120' y='51'%3E0%3C/tspan%3E%3Ctspan x='140' y='51'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 160px 54px;
   opacity: .08;
   pointer-events: none;
 }
@@ -400,9 +400,7 @@ footer li { list-style: none; margin-bottom: 6px; }
 .box-cta { background: var(--azzurro); border-radius: 16px; padding: 28px; }
 .box-cta h3 { color: var(--blu); font-size: 20px; margin-bottom: 10px; }
 .box-cta p { font-size: 15.5px; color: var(--grigio); margin-bottom: 18px; }
-.box-cta .btn { width: 100%; text-align: center; margin-bottom: 14px; }
-.box-cta .tel-riga { font-size: 15.5px; text-align: center; color: var(--grigio); }
-.box-cta .tel-riga a { color: var(--blu); font-weight: 700; text-decoration: none; }
+.box-cta .btn { width: 100%; text-align: center; }
 
 .correlati { background: #fff; padding: 60px 0 80px; border-top: 1px solid rgba(23,55,91,.08); }
 .correlati h2 { color: var(--blu); font-size: 26px; margin-bottom: 28px; text-align: center; }
