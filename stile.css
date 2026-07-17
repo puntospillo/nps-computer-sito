@@ -496,6 +496,34 @@ footer li { list-style: none; margin-bottom: 6px; }
   .campo-doppio { grid-template-columns: 1fr; }
 }
 body.bloccato { overflow: hidden; position: fixed; width: 100%; }
+
+/* ── Banner cookie ── */
+.cookie-banner {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 250;
+  background: var(--blu-scuro);
+  color: #DCE9F5;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  box-shadow: 0 -8px 24px rgba(0,0,0,.18);
+  transform: translateY(110%);
+  transition: transform .35s ease;
+}
+.cookie-banner.visibile { transform: translateY(0); }
+.cookie-banner p { margin: 0; font-size: 15px; max-width: 640px; }
+.cookie-banner a { color: #fff; text-decoration: underline; }
+.cookie-bottoni { display: flex; gap: 12px; flex: none; }
+.cookie-bottoni .btn { padding: 11px 22px; font-size: 15px; }
+@media (max-width: 640px) {
+  .cookie-banner { justify-content: flex-start; padding: 18px 20px; }
+  .cookie-bottoni { width: 100%; }
+  .cookie-bottoni .btn { flex: 1; text-align: center; }
+}
 @media (max-width: 560px) {
   .riquadri { grid-template-columns: 1fr; }
   .modale { padding: 26px 18px 20px; }

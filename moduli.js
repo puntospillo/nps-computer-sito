@@ -5,6 +5,70 @@
    NOTA una tantum: al primissimo invio FormSubmit manda una email di
    attivazione all'indirizzo di destinazione: va cliccato "Activate"
    una sola volta. */
+/* ── Google Analytics con consenso cookie ──
+   GA4 (G-2TKTJ0PP1B) viene caricato SOLO dopo che il visitatore preme
+   "Accetta" nel banner, oppure automaticamente nelle visite successive
+   se aveva già accettato in passato. Se rifiuta, nessuno script di
+   Google viene mai richiamato. */
+(function () {
+  'use strict';
+
+  var ID_GA = 'G-2TKTJ0PP1B';
+  var CHIAVE = 'nps-consenso-cookie';
+
+  function caricaGoogleAnalytics() {
+    if (window.__gaCaricato) { return; }
+    window.__gaCaricato = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', ID_GA, { anonymize_ip: true });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID_GA;
+    document.head.appendChild(s);
+  }
+
+  function radiceRelativa() {
+    return location.pathname.indexOf('/servizi/') !== -1 ? '../' : '';
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var scelta = null;
+    try { scelta = localStorage.getItem(CHIAVE); } catch (e) {}
+
+    if (scelta === 'accettato') {
+      caricaGoogleAnalytics();
+      return;
+    }
+    if (scelta === 'rifiutato') {
+      return;
+    }
+
+    var banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.innerHTML =
+      '<p>Usiamo Google Analytics solo se ci dai il consenso, per capire come viene usato il sito. ' +
+      '<a href="' + radiceRelativa() + 'privacy.html#cookie">Scopri di più</a>.</p>' +
+      '<div class="cookie-bottoni">' +
+      '  <button type="button" class="btn btn-ghost" id="cookie-rifiuta">Rifiuta</button>' +
+      '  <button type="button" class="btn btn-corallo" id="cookie-accetta">Accetta</button>' +
+      '</div>';
+    document.body.appendChild(banner);
+    requestAnimationFrame(function () { banner.classList.add('visibile'); });
+
+    document.getElementById('cookie-accetta').addEventListener('click', function () {
+      try { localStorage.setItem(CHIAVE, 'accettato'); } catch (e) {}
+      banner.remove();
+      caricaGoogleAnalytics();
+    });
+    document.getElementById('cookie-rifiuta').addEventListener('click', function () {
+      try { localStorage.setItem(CHIAVE, 'rifiutato'); } catch (e) {}
+      banner.remove();
+    });
+  });
+})();
+
 (function () {
   'use strict';
 
