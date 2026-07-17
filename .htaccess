@@ -1,0 +1,51 @@
+# Redirect 301 dai vecchi indirizzi WordPress alle nuove pagine equivalenti.
+# Necessario perché Google ha indicizzato per anni gli indirizzi ?page_id=...
+# del vecchio sito: senza questi redirect, quei link mostrerebbero solo
+# la home invece della pagina giusta, e Google impiegherebbe più tempo
+# a capire dove sono finiti i contenuti.
+
+RewriteEngine On
+
+# Supporto tecnico informatico -> Assistenza e monitoraggio
+RewriteCond %{QUERY_STRING} ^page_id=203$
+RewriteRule ^$ /servizi/assistenza-tecnica.html? [R=301,L]
+
+# Procedura richiesta assistenza -> Assistenza e monitoraggio
+RewriteCond %{QUERY_STRING} ^page_id=921$
+RewriteRule ^$ /servizi/assistenza-tecnica.html? [R=301,L]
+
+# Gestionale cloud -> Cloud, backup e continuità
+RewriteCond %{QUERY_STRING} ^page_id=271$
+RewriteRule ^$ /servizi/cloud-posta-backup.html? [R=301,L]
+
+# Sicurezza informatica -> Sicurezza e conformità
+RewriteCond %{QUERY_STRING} ^page_id=775$
+RewriteRule ^$ /servizi/sicurezza-informatica.html? [R=301,L]
+
+# Noleggio -> Reti, postazioni e noleggio
+RewriteCond %{QUERY_STRING} ^page_id=497$
+RewriteRule ^$ /servizi/reti-cablaggio-noleggio.html? [R=301,L]
+
+# Recupero dati -> Reti, postazioni e noleggio (nessuna pagina piu' specifica)
+RewriteCond %{QUERY_STRING} ^page_id=619$
+RewriteRule ^$ /servizi/reti-cablaggio-noleggio.html? [R=301,L]
+
+# Consulenza -> Consulenza AI su misura
+RewriteCond %{QUERY_STRING} ^page_id=435$
+RewriteRule ^$ /servizi/consulenza-ai.html? [R=301,L]
+
+# Web solution -> Integrazione degli strumenti
+RewriteCond %{QUERY_STRING} ^page_id=51$
+RewriteRule ^$ /servizi/integrazione-strumenti.html? [R=301,L]
+
+# Contatti -> home, sezione contatti
+RewriteCond %{QUERY_STRING} ^page_id=54$
+RewriteRule ^$ /index.html? [R=301,L]
+
+# Qualsiasi altro ?page_id=... rimasto indicizzato -> home
+RewriteCond %{QUERY_STRING} ^page_id=
+RewriteRule ^$ /index.html? [R=301,L]
+
+# www obbligatorio (coerenza con canonical, Open Graph e sitemap)
+RewriteCond %{HTTP_HOST} ^npscomputer\.it$ [NC]
+RewriteRule ^(.*)$ https://www.npscomputer.it/$1 [R=301,L]
