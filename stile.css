@@ -214,10 +214,18 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='28'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='13'%3E1%3C/tspan%3E%3Ctspan x='11' y='13'%3E0%3C/tspan%3E%3Ctspan x='22' y='13'%3E0%3C/tspan%3E%3Ctspan x='33' y='13'%3E1%3C/tspan%3E%3Ctspan x='44' y='13'%3E1%3C/tspan%3E%3Ctspan x='55' y='13'%3E0%3C/tspan%3E%3Ctspan x='66' y='13'%3E1%3C/tspan%3E%3Ctspan x='77' y='13'%3E0%3C/tspan%3E%3Ctspan x='0' y='27'%3E0%3C/tspan%3E%3Ctspan x='11' y='27'%3E1%3C/tspan%3E%3Ctspan x='22' y='27'%3E1%3C/tspan%3E%3Ctspan x='33' y='27'%3E1%3C/tspan%3E%3Ctspan x='44' y='27'%3E0%3C/tspan%3E%3Ctspan x='55' y='27'%3E1%3C/tspan%3E%3Ctspan x='66' y='27'%3E0%3C/tspan%3E%3Ctspan x='77' y='27'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  background-size: 88px 28px;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='13'%3E1%3C/tspan%3E%3Ctspan x='11' y='13'%3E0%3C/tspan%3E%3Ctspan x='22' y='13'%3E0%3C/tspan%3E%3Ctspan x='33' y='13'%3E1%3C/tspan%3E%3Ctspan x='44' y='13'%3E1%3C/tspan%3E%3Ctspan x='55' y='13'%3E0%3C/tspan%3E%3Ctspan x='66' y='13'%3E1%3C/tspan%3E%3Ctspan x='77' y='13'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='40'%3E0%3C/tspan%3E%3Ctspan x='11' y='40'%3E1%3C/tspan%3E%3Ctspan x='22' y='40'%3E1%3C/tspan%3E%3Ctspan x='33' y='40'%3E1%3C/tspan%3E%3Ctspan x='44' y='40'%3E0%3C/tspan%3E%3Ctspan x='55' y='40'%3E1%3C/tspan%3E%3Ctspan x='66' y='40'%3E0%3C/tspan%3E%3Ctspan x='77' y='40'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 88px 54px, 88px 54px;
+  background-repeat: repeat, repeat;
   opacity: .06;
   pointer-events: none;
+  animation: scorriBinario 14s linear infinite;
+}
+@keyframes scorriBinario {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 88px 0, -88px 0; }
 }
 .tinta > * { position: relative; margin: 0; }
 a.tinta:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(15,39,64,.28); filter: brightness(1.05); }
@@ -231,16 +239,16 @@ a.tinta:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(15,39,
   gap: 16px;
 }
 .tinta .icona-tinta {
-  width: 60px;
-  height: 60px;
+  height: 52px;
+  width: auto;
   object-fit: contain;
   opacity: .55;
   flex: none;
 }
 .tinta .icona-tinta ~ .domanda,
-.tinta-testata .domanda { margin: 0; }
+.tinta-testata .domanda { margin: 0; flex: 1; min-width: 0; }
 .tinta-mini .tinta-testata { gap: 12px; }
-.tinta-mini .icona-tinta { width: 44px; height: 44px; }
+.tinta-mini .icona-tinta { height: 38px; }
 .tinta .domanda {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
@@ -348,10 +356,14 @@ footer li { list-style: none; margin-bottom: 6px; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='28'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='13'%3E1%3C/tspan%3E%3Ctspan x='11' y='13'%3E0%3C/tspan%3E%3Ctspan x='22' y='13'%3E0%3C/tspan%3E%3Ctspan x='33' y='13'%3E1%3C/tspan%3E%3Ctspan x='44' y='13'%3E1%3C/tspan%3E%3Ctspan x='55' y='13'%3E0%3C/tspan%3E%3Ctspan x='66' y='13'%3E1%3C/tspan%3E%3Ctspan x='77' y='13'%3E0%3C/tspan%3E%3Ctspan x='0' y='27'%3E0%3C/tspan%3E%3Ctspan x='11' y='27'%3E1%3C/tspan%3E%3Ctspan x='22' y='27'%3E1%3C/tspan%3E%3Ctspan x='33' y='27'%3E1%3C/tspan%3E%3Ctspan x='44' y='27'%3E0%3C/tspan%3E%3Ctspan x='55' y='27'%3E1%3C/tspan%3E%3Ctspan x='66' y='27'%3E0%3C/tspan%3E%3Ctspan x='77' y='27'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  background-size: 88px 28px;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='13'%3E1%3C/tspan%3E%3Ctspan x='11' y='13'%3E0%3C/tspan%3E%3Ctspan x='22' y='13'%3E0%3C/tspan%3E%3Ctspan x='33' y='13'%3E1%3C/tspan%3E%3Ctspan x='44' y='13'%3E1%3C/tspan%3E%3Ctspan x='55' y='13'%3E0%3C/tspan%3E%3Ctspan x='66' y='13'%3E1%3C/tspan%3E%3Ctspan x='77' y='13'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='40'%3E0%3C/tspan%3E%3Ctspan x='11' y='40'%3E1%3C/tspan%3E%3Ctspan x='22' y='40'%3E1%3C/tspan%3E%3Ctspan x='33' y='40'%3E1%3C/tspan%3E%3Ctspan x='44' y='40'%3E0%3C/tspan%3E%3Ctspan x='55' y='40'%3E1%3C/tspan%3E%3Ctspan x='66' y='40'%3E0%3C/tspan%3E%3Ctspan x='77' y='40'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 88px 54px, 88px 54px;
+  background-repeat: repeat, repeat;
   opacity: .06;
   pointer-events: none;
+  animation: scorriBinario 14s linear infinite;
 }
 .hero-pagina .container { position: relative; }
 .tema-blu .hero-pagina { background: linear-gradient(135deg, #1E4573 0%, var(--blu) 100%); }
@@ -361,8 +373,8 @@ footer li { list-style: none; margin-bottom: 6px; }
 .hero-pagina .occhiello { color: #F5B199; margin-bottom: 10px; }
 .tema-corallo .hero-pagina .occhiello { color: #FFF3ED; }
 .hero-testata { display: flex; align-items: center; gap: 24px; }
-.hero-pagina .icona-hero { width: 88px; height: 88px; object-fit: contain; opacity: .55; flex: none; }
-.hero-pagina h1 { font-size: clamp(30px, 3.6vw, 44px); max-width: 22em; margin: 0; }
+.hero-pagina .icona-hero { height: 96px; width: auto; object-fit: contain; opacity: .55; flex: none; }
+.hero-pagina h1 { font-size: clamp(30px, 3.6vw, 44px); max-width: 22em; margin: 0; flex: 1; min-width: 0; }
 .hero-pagina .sotto { color: #DCE9F5; font-size: 19.5px; margin-top: 14px; max-width: 42em; }
 .briciole { font-size: 14.5px; margin-bottom: 22px; color: #9FB3C8; }
 .briciole a { color: #C9D8E8; text-decoration: none; }
