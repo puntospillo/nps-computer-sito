@@ -157,7 +157,8 @@
     '    <h3 id="titolo-nis2">Verifica in 30 secondi se la tua azienda potrebbe rientrare nella NIS2</h3>' +
     '    <form id="form-nis2">' +
     '      <div class="quiz-domanda">' +
-    '        <p>1. La tua azienda opera in uno dei settori interessati dalla NIS2 (ICT, energia, sanità, trasporti, PA, ecc.)?</p>' +
+    '        <p>1. La tua azienda opera in uno dei settori interessati dalla NIS2?</p>' +
+    '        <p class="quiz-settori">Energia (elettricità, gas, petrolio, idrogeno, teleriscaldamento) &middot; Trasporti (aerei, ferroviari, marittimi, su strada) &middot; Settore bancario e mercati finanziari &middot; Sanità e dispositivi medici &middot; Acqua potabile e acque reflue &middot; Infrastrutture digitali e servizi ICT &middot; Pubblica amministrazione &middot; Spazio &middot; Servizi postali e di corriere &middot; Gestione dei rifiuti &middot; Sostanze chimiche &middot; Produzione e distribuzione di alimenti &middot; Fabbricazione (elettronica, macchinari, autoveicoli e altri mezzi di trasporto) &middot; Fornitori di servizi digitali (marketplace, motori di ricerca, social network) &middot; Ricerca</p>' +
     '        <div class="quiz-opzioni">' +
     '          <label><input type="radio" name="d1" value="Sì" required> Sì</label>' +
     '          <label><input type="radio" name="d1" value="No"> No</label>' +
