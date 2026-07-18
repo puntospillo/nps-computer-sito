@@ -165,7 +165,7 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
 .fiducia { background: #fff; padding: 26px 0; border-bottom: 1px solid rgba(23,55,91,.08); }
 .fiducia-inner { display: flex; align-items: center; justify-content: center; gap: 44px; flex-wrap: wrap; }
 .fiducia .titolo { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--blu); font-weight: 700; }
-.fiducia .marchio { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 19px; color: #93A7BC; }
+.fiducia .marchio { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 16px; color: #93A7BC; }
 
 /* ── Intro ── */
 .intro { padding: 80px 0 8px; }
@@ -499,6 +499,17 @@ footer li { list-style: none; margin-bottom: 6px; }
 .campo-doppio { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .modale .btn { width: 100%; }
 .modale .nota { font-size: 13.5px; color: var(--grigio); margin-top: 12px; text-align: center; }
+/* ── Questionario NIS2 ── */
+#modale-nis2 h3 { font-size: 20px; line-height: 1.35; margin-bottom: 18px; }
+.quiz-domanda { margin-bottom: 18px; }
+.quiz-domanda p { font-weight: 700; font-size: 15px; color: var(--blu); margin: 0 0 8px; line-height: 1.45; }
+.quiz-opzioni { display: flex; gap: 22px; flex-wrap: wrap; }
+.quiz-opzioni label { display: flex; align-items: center; gap: 7px; font-size: 15px; cursor: pointer; }
+.quiz-opzioni input { accent-color: var(--corallo); width: 17px; height: 17px; margin: 0; }
+.nis2-risposta { background: var(--azzurro); border-radius: 12px; padding: 18px 20px; margin-bottom: 18px; }
+.nis2-risposta h4 { font-family: 'Sora', sans-serif; color: var(--blu); font-size: 18px; margin: 0 0 8px; }
+.nis2-risposta p { color: var(--antracite); font-size: 15px; margin: 0; }
+
 .esito-ok { text-align: center; padding: 22px 0 10px; }
 .esito-icona {
   width: 62px; height: 62px;
