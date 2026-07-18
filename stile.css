@@ -225,6 +225,14 @@ a.tinta:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(15,39,
 .c-teal { background: linear-gradient(135deg, #1F7A72 0%, #15544E 100%); }
 .c-corallo { background: linear-gradient(135deg, #E06A3F 0%, #C24E2B 100%); }
 .c-ardesia { background: linear-gradient(135deg, #4A6E96 0%, #35618E 100%); }
+.tinta .icona-tinta {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  opacity: .55;
+  margin-bottom: 2px;
+}
+.tinta-mini .icona-tinta { width: 34px; height: 34px; }
 .tinta .domanda {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
@@ -344,6 +352,7 @@ footer li { list-style: none; margin-bottom: 6px; }
 .tema-ardesia .hero-pagina { background: linear-gradient(135deg, #4A6E96 0%, #35618E 100%); }
 .hero-pagina .occhiello { color: #F5B199; margin-bottom: 10px; }
 .tema-corallo .hero-pagina .occhiello { color: #FFF3ED; }
+.hero-pagina .icona-hero { width: 44px; height: 44px; object-fit: contain; opacity: .55; margin-bottom: 14px; }
 .hero-pagina h1 { font-size: clamp(30px, 3.6vw, 44px); max-width: 22em; }
 .hero-pagina .sotto { color: #DCE9F5; font-size: 19.5px; margin-top: 14px; max-width: 42em; }
 .briciole { font-size: 14.5px; margin-bottom: 22px; color: #9FB3C8; }
