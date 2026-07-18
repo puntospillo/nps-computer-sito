@@ -221,7 +221,7 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   background-repeat: repeat, repeat;
   opacity: .08;
   pointer-events: none;
-  animation: scorriBinario 11s linear infinite;
+  animation: scorriBinario 13s linear infinite;
 }
 @keyframes scorriBinario {
   from { background-position: 0 0, 0 0; }
@@ -363,7 +363,7 @@ footer li { list-style: none; margin-bottom: 6px; }
   background-repeat: repeat, repeat;
   opacity: .08;
   pointer-events: none;
-  animation: scorriBinario 11s linear infinite;
+  animation: scorriBinario 13s linear infinite;
 }
 .hero-pagina .container { position: relative; }
 .tema-blu .hero-pagina { background: linear-gradient(135deg, #1E4573 0%, var(--blu) 100%); }
