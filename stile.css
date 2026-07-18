@@ -215,13 +215,13 @@ nav.menu a:hover, nav.menu a.attivo { color: var(--blu); border-color: var(--cor
   position: absolute;
   inset: 0;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='13'%3E1%3C/tspan%3E%3Ctspan x='11' y='13'%3E0%3C/tspan%3E%3Ctspan x='22' y='13'%3E0%3C/tspan%3E%3Ctspan x='33' y='13'%3E1%3C/tspan%3E%3Ctspan x='44' y='13'%3E1%3C/tspan%3E%3Ctspan x='55' y='13'%3E0%3C/tspan%3E%3Ctspan x='66' y='13'%3E1%3C/tspan%3E%3Ctspan x='77' y='13'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='40'%3E0%3C/tspan%3E%3Ctspan x='11' y='40'%3E1%3C/tspan%3E%3Ctspan x='22' y='40'%3E1%3C/tspan%3E%3Ctspan x='33' y='40'%3E1%3C/tspan%3E%3Ctspan x='44' y='40'%3E0%3C/tspan%3E%3Ctspan x='55' y='40'%3E1%3C/tspan%3E%3Ctspan x='66' y='40'%3E0%3C/tspan%3E%3Ctspan x='77' y='40'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  background-size: 88px 54px, 88px 54px;
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='36'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='13'%3E1%3C/tspan%3E%3Ctspan x='11' y='13'%3E0%3C/tspan%3E%3Ctspan x='22' y='13'%3E0%3C/tspan%3E%3Ctspan x='33' y='13'%3E1%3C/tspan%3E%3Ctspan x='44' y='13'%3E1%3C/tspan%3E%3Ctspan x='55' y='13'%3E0%3C/tspan%3E%3Ctspan x='66' y='13'%3E1%3C/tspan%3E%3Ctspan x='77' y='13'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='36'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='31'%3E0%3C/tspan%3E%3Ctspan x='11' y='31'%3E1%3C/tspan%3E%3Ctspan x='22' y='31'%3E1%3C/tspan%3E%3Ctspan x='33' y='31'%3E1%3C/tspan%3E%3Ctspan x='44' y='31'%3E0%3C/tspan%3E%3Ctspan x='55' y='31'%3E1%3C/tspan%3E%3Ctspan x='66' y='31'%3E0%3C/tspan%3E%3Ctspan x='77' y='31'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 88px 36px, 88px 36px;
   background-repeat: repeat, repeat;
-  opacity: .06;
+  opacity: .1;
   pointer-events: none;
-  animation: scorriBinario 14s linear infinite;
+  animation: scorriBinario 9s linear infinite;
 }
 @keyframes scorriBinario {
   from { background-position: 0 0, 0 0; }
@@ -357,13 +357,13 @@ footer li { list-style: none; margin-bottom: 6px; }
   position: absolute;
   inset: 0;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='13'%3E1%3C/tspan%3E%3Ctspan x='11' y='13'%3E0%3C/tspan%3E%3Ctspan x='22' y='13'%3E0%3C/tspan%3E%3Ctspan x='33' y='13'%3E1%3C/tspan%3E%3Ctspan x='44' y='13'%3E1%3C/tspan%3E%3Ctspan x='55' y='13'%3E0%3C/tspan%3E%3Ctspan x='66' y='13'%3E1%3C/tspan%3E%3Ctspan x='77' y='13'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='54'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='40'%3E0%3C/tspan%3E%3Ctspan x='11' y='40'%3E1%3C/tspan%3E%3Ctspan x='22' y='40'%3E1%3C/tspan%3E%3Ctspan x='33' y='40'%3E1%3C/tspan%3E%3Ctspan x='44' y='40'%3E0%3C/tspan%3E%3Ctspan x='55' y='40'%3E1%3C/tspan%3E%3Ctspan x='66' y='40'%3E0%3C/tspan%3E%3Ctspan x='77' y='40'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
-  background-size: 88px 54px, 88px 54px;
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='36'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='13'%3E1%3C/tspan%3E%3Ctspan x='11' y='13'%3E0%3C/tspan%3E%3Ctspan x='22' y='13'%3E0%3C/tspan%3E%3Ctspan x='33' y='13'%3E1%3C/tspan%3E%3Ctspan x='44' y='13'%3E1%3C/tspan%3E%3Ctspan x='55' y='13'%3E0%3C/tspan%3E%3Ctspan x='66' y='13'%3E1%3C/tspan%3E%3Ctspan x='77' y='13'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='36'%3E%3Ctext font-family='Arial, sans-serif' font-size='17' font-weight='bold' fill='white'%3E%3Ctspan x='0' y='31'%3E0%3C/tspan%3E%3Ctspan x='11' y='31'%3E1%3C/tspan%3E%3Ctspan x='22' y='31'%3E1%3C/tspan%3E%3Ctspan x='33' y='31'%3E1%3C/tspan%3E%3Ctspan x='44' y='31'%3E0%3C/tspan%3E%3Ctspan x='55' y='31'%3E1%3C/tspan%3E%3Ctspan x='66' y='31'%3E0%3C/tspan%3E%3Ctspan x='77' y='31'%3E0%3C/tspan%3E%3C/text%3E%3C/svg%3E");
+  background-size: 88px 36px, 88px 36px;
   background-repeat: repeat, repeat;
-  opacity: .06;
+  opacity: .1;
   pointer-events: none;
-  animation: scorriBinario 14s linear infinite;
+  animation: scorriBinario 9s linear infinite;
 }
 .hero-pagina .container { position: relative; }
 .tema-blu .hero-pagina { background: linear-gradient(135deg, #1E4573 0%, var(--blu) 100%); }
