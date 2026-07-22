@@ -21,3 +21,16 @@ h1,h2,h3{font-family:var(--font-sora),sans-serif}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
 
 [hidden]{display:none!important}
+
+/* Correzione mobile: la demo del hero diventa una pila verticale
+   (le card assolute si sovrapponevano sotto i 500px) */
+@media(max-width:540px){
+  .workspace-demo{height:auto;min-height:0;padding:46px 14px 16px;display:flex;flex-direction:column;gap:11px}
+  .workspace-demo .operator{display:none}
+  .workspace-demo .desk-window,
+  .workspace-demo .work-card,
+  .workspace-demo .result-card,
+  .workspace-demo .status{position:static;width:auto;left:auto;right:auto;top:auto;bottom:auto}
+  .workspace-demo .moving-cursor{display:none}
+  .workspace-demo .status{margin-top:3px}
+}
