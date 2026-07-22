@@ -42,6 +42,24 @@ img { max-width: 100%; display: block; }
 .btn-blu { background: var(--blu); color: #fff; }
 .btn-blu:hover { background: var(--blu-scuro); }
 
+/* Bottone con onda di colore che scorre da destra a sinistra */
+.btn-onda { position: relative; overflow: hidden; }
+.btn-onda::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; width: 70%;
+  background: linear-gradient(105deg, transparent 0%, rgba(255,255,255,.4) 50%, transparent 100%);
+  transform: translateX(240%) skewX(-8deg);
+  animation: ondaColore 2.8s ease-in-out infinite;
+  pointer-events: none;
+  will-change: transform;
+}
+@keyframes ondaColore {
+  0% { transform: translateX(240%) skewX(-8deg); }
+  60%, 100% { transform: translateX(-180%) skewX(-8deg); }
+}
+
 /* ── Header ── */
 header {
   position: sticky;
@@ -436,6 +454,7 @@ footer li { list-style: none; margin-bottom: 6px; }
 .box-cta h3 { color: var(--blu); font-size: 20px; margin-bottom: 10px; }
 .box-cta p { font-size: 15.5px; color: var(--grigio); margin-bottom: 18px; }
 .box-cta .btn { width: 100%; text-align: center; }
+.box-cta .btn-onda { margin-top: 10px; display: block; }
 
 .correlati { background: #fff; padding: 60px 0 80px; border-top: 1px solid rgba(23,55,91,.08); }
 .correlati h2 { color: var(--blu); font-size: 26px; margin-bottom: 28px; text-align: center; }
